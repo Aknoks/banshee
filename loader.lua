@@ -14,8 +14,7 @@ task.spawn(function()
         return
     end
     
-    local loader_url
-    
+    local loader_url;
     if type(loader_data) == "table" then
         loader_url = getgenv().beta_mode and loader_data.beta or loader_data.stable
     else
