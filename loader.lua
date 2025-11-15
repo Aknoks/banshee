@@ -1,4 +1,4 @@
-task.spawn(function()
+task.delay(0.2, function()
     local game_loaders = {
         [1087859240] = "https://api.luarmor.net/files/v3/loaders/40db47a67f36abb41c12726416589845.lua",
         [1359573625] = {
