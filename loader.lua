@@ -20,7 +20,7 @@ task.delay(0.2, function()
         print(getgenv().beta_mode)
         loader_url = getgenv().beta_mode and loader_data.beta or loader_data.stable
     else
-        print(getgenv().beta_mode)
+        print(getgenv().beta_mode, "a")
         loader_url = loader_data
     end
     
