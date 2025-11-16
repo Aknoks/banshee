@@ -16,12 +16,10 @@ task.delay(0.2, function()
     
     local loader_url;
     if type(loader_data) == "table" then
-        loader_url = getgenv().beta_mode and loader_data.beta or loader_data.stable
+        loader_url = getgenv().beta_mode == "beta" and loader_data.beta or loader_data.stable
     else
         loader_url = loader_data
     end
-
-    print(loader_url)
     
     loadstring(game:HttpGet(loader_url))()
 end)
