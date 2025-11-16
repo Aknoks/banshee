@@ -6,8 +6,7 @@ task.delay(0.2, function()
             stable = "https://api.luarmor.net/files/v3/loaders/157f311f0c03767c211de326c8a5f05f.lua"
         }
     }
-    print("nigga")
-    
+
     local game_id = game.GameId
     local loader_data = game_loaders[game_id]
     
@@ -17,12 +16,12 @@ task.delay(0.2, function()
     
     local loader_url;
     if type(loader_data) == "table" then
-        print(getgenv().beta_mode)
         loader_url = getgenv().beta_mode and loader_data.beta or loader_data.stable
     else
-        print(getgenv().beta_mode, "a")
         loader_url = loader_data
     end
+
+    print(loader_url)
     
     loadstring(game:HttpGet(loader_url))()
 end)
