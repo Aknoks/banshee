@@ -10,8 +10,8 @@ local success, error_msg = pcall(function()
             beta = "https://api.luarmor.net/files/v3/loaders/936841afb30c4e5a9f063bc16b25dd61.lua",
             stable = "https://api.luarmor.net/files/v3/loaders/157f311f0c03767c211de326c8a5f05f.lua",
             farms = {
-                beta = "https://api.luarmor.net/files/v3/loaders/43733156c2647ec49a55229820eee215.lua",
-                stable = "https://api.luarmor.net/files/v4/loaders/d3280e0f1b18cde55d16adac23e57430.lua"
+                beta = "https://api.luarmor.net/files/v4/loaders/d3280e0f1b18cde55d16adac23e57430.lua",
+                stable = ""
             }
         }
     }
